@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 100,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/bus-vehicle-transport-school-128.png",
+    "code": "ABC123",
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "title": "Producto 3",
+    "description": "Descripción del producto 1",
+    "price": 100,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/bus-vehicle-transport-school-128.png",
+    "code": "ABC125",
+    "stock": 45
+  }
+]
