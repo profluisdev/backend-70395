@@ -51,10 +51,10 @@ export class CartManager {
     // Obtener el carrito por id y validar que exista
     const cart = await this.getCartById(cid);
 
-    const product = cart.products.find((product) => product.id === pid);
+    const product = cart.products.find((productCart) => productCart.product === pid);
     if (!product) {
       // Agregar el producto al carrito si no existe
-      cart.products.push({ id: pid, quantity: 1 });
+      cart.products.push({ product: pid, quantity: 1 });
     } else {
       // Incrementar la cantidad en 1 si el producto ya existe
       product.quantity++;
