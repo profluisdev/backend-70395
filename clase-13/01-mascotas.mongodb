@@ -1,0 +1,41 @@
+
+use("baseCRUD")
+
+db.createCollection("mascotas")
+
+
+let mascotas = [
+  {
+    nombre: "Firulais",
+    especie: "Perro",
+    edad: 3,
+  },
+  {
+    nombre: "Piolin",
+    especie: "Pajaro",
+    edad: 3,
+  },
+  {
+    nombre: "Garfield",
+    especie: "Gato",
+    edad: 3,
+  }
+]
+
+// Insertar varios documentos al mismo tiempo
+// db.mascotas.insertMany(mascotas)
+// db.mascotas.insertOne( {
+//   nombre: "Silvestre",
+//   especie: "Gato",
+//   edad: 3,
+// })
+
+// Buscar las mascotas registradas
+// db.mascotas.find()
+
+// db.mascotas.find({ especie: "Gato" })
+// db.mascotas.find({ especie: "Pajaro" })
+// db.mascotas.find({ especie: "Avestruz" })
+
+// Contar el número de mascotas
+db.mascotas.count()

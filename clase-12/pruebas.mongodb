@@ -1,0 +1,17 @@
+
+// Comando básicos de mongo
+
+// Seleccionamos la base de datos a trabajar y si no existe la crea
+use("clase12")
+
+// Creamos una colección
+// db.createCollection("usuarios")
+
+// Crear un documento e insertarlo en nuestra colección
+// db.usuarios.insertOne({ nombre: "Ana", apellido: "Perez", edad: 30 })
+
+// Eliminar un usuario
+// db.usuarios.deleteOne({"_id": ObjectId('674b3a48ded5650d240f2270')})
+
+// Consultar los usuarios registrados
+db.usuarios.find()

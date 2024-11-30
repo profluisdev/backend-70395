@@ -1,0 +1,88 @@
+use("colegio");
+
+db.createCollection("estudiantes");
+
+let estudiantes = [
+  {
+    nombre: "Juan",
+    apellido: "Perez",
+    curso: "1A",
+    edad: 10,
+    correo: "jp@gmail.com",
+    sexo: "H",
+  },
+  {
+    nombre: "Maria",
+    apellido: "Lopez",
+    curso: "1A",
+    edad: 9,
+    correo: "ml@gmail.com",
+    sexo: "M",
+  },
+  {
+    nombre: "Pedro",
+    apellido: "Gomez",
+    curso: "1B",
+    edad: 11,
+    correo: "pg@gmail.com",
+    sexo: "H",
+  },
+  {
+    nombre: "Ana",
+    apellido: "Martinez",
+    curso: "1B",
+    edad: 10,
+    correo: "am@gmail.com",
+    sexo: "M",
+  },
+  {
+    nombre: "Luis",
+    apellido: "Rodriguez",
+    curso: "1A",
+    edad: 10,
+    correo: "lr@gmail.com",
+    sexo: "H",
+  },
+];
+
+// db.estudiantes.insertMany(estudiantes)
+
+// db.estudiantes.insertOne( {
+//   nombre: "Rodolfo",
+//   apellido: "Contreras",
+//   curso: "1A",
+// })
+
+// Realizar una búsqueda para obtener a todos los estudiantes.
+// db.estudiantes.find()
+
+// Realizar una búsqueda para obtener a todos los estudiantes de sexo M
+// db.estudiantes.find({sexo: "H"})
+
+// Realizar un conteo para obtener el número de documentos totales.
+// db.estudiantes.countDocuments()
+
+// Realizar un conteo para obtener el número de documentos totales del sexo M.
+// db.estudiantes.countDocuments({sexo: "M"})
+
+// Proyecciones
+
+// db.estudiantes.find({}, { nombre: 1, apellido: 1 })
+// db.estudiantes.find({ sexo: "M" }, { nombre: 1, apellido: 1 })
+
+// Sort
+
+// db.estudiantes.find().sort({ nombre: 1 })
+// db.estudiantes.find().sort({ nombre: -1 })
+// db.estudiantes.find({sexo: "H"}, { nombre: 1, apellido: 1}).sort({ nombre: -1 })
+
+// Skip
+
+// db.estudiantes.find().skip(2)
+// db.estudiantes.find().sort({ nombre: 1 }).skip(1)
+// db.estudiantes.find().sort({ nombre: 1 }).skip(4)
+
+// Limit
+
+// db.estudiantes.find().limit(3)
+// db.estudiantes.find({sexo: "M"}, {nombre: 1}).sort({nombre: 1}).limit(1)

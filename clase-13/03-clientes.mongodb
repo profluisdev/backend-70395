@@ -1,0 +1,26 @@
+use("clientesDB")
+
+db.createCollection("clientes")
+
+// db.clientes.insertMany([
+//   { nombre: "Pablo", edad: 25 },
+//   { nombre: "Juan", edad: 22 },
+//   { nombre: "Lucia", edad: 25 },
+//   { nombre: "Juan", edad: 29 },
+//   { nombre: "Fede", edad: 35 },
+// ]);
+
+// Update 
+
+// db.clientes.updateOne({ nombre: "Juan" }, { $set: { edad: 30 } })
+// db.clientes.updateOne({ _id: ObjectId('674b590bf99168cc4da4bfad') }, { $set: { edad: 40 } })
+// db.clientes.updateOne({ _id: ObjectId('674b590bf99168cc4da4bfad') }, { $inc: { edad: 1 } })
+
+// db.clientes.updateMany({ }, { $inc: { edad: 1 } })
+
+// Delete
+
+// db.clientes.deleteOne({_id: ObjectId('674b590bf99168cc4da4bfad')})
+
+// db.clientes.deleteMany({})
+db.clientes.deleteMany({nombre: "Juan"})
