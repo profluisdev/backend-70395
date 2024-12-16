@@ -1,0 +1,20 @@
+{
+  "name": "preentrega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.4",
+    "mongoose-paginate-v2": "^1.8.5",
+    "uuid": "^11.0.3"
+  }
+}
